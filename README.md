@@ -2,4 +2,4 @@
 It's a repository of Cobra Kai Portifolio website clone using HTML5, CSS3 and JS. 
 
 # Inspired by
-The character Miguel Diaz, played by Xolo Maridueña, developed a Portifolio website for his sensei Johnny Lawrence in Cobra Kai Series.
+The character Miguel Diaz, played by Xolo Maridueña, developed a Portifolio website for his sensei Johnny Lawrence in Cobra Kai Series. This website is for new students on DoJo! #NoMercy
