@@ -2,13 +2,10 @@
 var bleep = new Audio();
 bleep.src = "click-sound.mp3";
 
-function cobra(){
+function cobraRedirect(){
+    document.cobra.src='img.svg';
     bleep.play();
-    const btnScroollToBottom = document.querySelector("#cobra");
-    window.scrollTo(4827, 4827);
-    // btnScroollToBottom.addEventListener("click", function (){
-    //     $("html", "body").animate({ scrollTop: 10000 }, "slow");
-    // });
+    // window.scrollTo(4687, 4687);
 }
 
 sensei = () =>{
