@@ -145,11 +145,14 @@
     width: 107px; height: 47px;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
+    outline: none;
 }
 
 #sign #sign-up{
-    width: 157px;
+    width: 187px;
     margin: 127px 0px 0px 139px;
+    padding: 0px 7px 0px 7px;
+    outline: none;
 }
 
 footer,i{
