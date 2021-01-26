@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    margin: auto;
 }
 
 /* --- Menu responsive fixed --- */
@@ -44,7 +49,10 @@
     box-shadow: 0px 3px 0px#f01010;
 }
 
-/* section */
+
+
+/* ---- Sections ---- */
+
 #intro{
     width: 100%; height: 100vh;
     display: flex;
@@ -59,11 +67,15 @@
 }
 
 #home{
-    width: 100%; height: 100vh;
+    width: 100%; height: 57vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #111010;
+
+    background-image: url('/assets/public/img/parallax.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #training{
@@ -84,8 +96,9 @@
 
 #about{
     width: 100%; height: 100vh;
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #131212;
 }
@@ -98,10 +111,94 @@
     background-color: #141313;
 }
 
+/* -------- HOME -------- */
+
+#home h1{
+    font-family: 'Merienda One', cursive;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #bd1212,
+                 2px 2px 2px #bd1212;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+#home p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #bd1212,
+                 2px 2px 2px #bd1212;
+    padding: 10px;
+}
+
+
+/* ----- Schedule ---- */
+
+#schedule table{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px;
+}
+
+table #week{
+
+}
 
 
 
-/* ---- Login Area ---- */
+
+
+
+
+
+
+
+
+
+/* ----- ABOUT ----- */
+
+#about .sensei > img{
+    margin-left: -170px;
+}
+
+#about .text{
+    color: #f6f9f6;
+    text-align: left;
+    margin-top: -477px;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#about .text h1{
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+#about .text h1:nth-child(1){
+    margin-bottom: 20px;
+    font-size: 37px;
+}
+
+#about .text p{
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------- Login Area -------- */
+
 #sign{
     background-color: #bd1212;
     padding: 14px 2px 54px 54px;
@@ -109,6 +206,7 @@
     border-radius: 7px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 17.7px;
 }
 
@@ -127,10 +225,11 @@
  text-decoration: none;
  position: absolute;
  margin-top: 27px;
+ font-weight: lighter;
 }
 
 #sign a:hover{
-    box-shadow: 0px 1px 0px#fff;
+    text-decoration: underline;
 }
 
 #sign input[type="text"], input[type="password"]{
@@ -138,6 +237,7 @@
     width: 457px;
     font-size: 30px;
     margin: 7px auto;
+    font-family: 'Arial', sans-serif;
 }
 
 #sign button{
@@ -146,6 +246,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     outline: none;
+    cursor: pointer;
 }
 
 #sign #sign-up{
@@ -153,25 +254,28 @@
     margin: 127px 0px 0px 139px;
     padding: 0px 7px 0px 7px;
     outline: none;
+    cursor: pointer;
 }
 
-footer,i{
+
+/* ---- Footer ---- */
+
+footer{
     font-family: 'Poppins', sans-serif;
-    text-align: justify;
+    text-align: center;
     background-color: #0f0e0e;
     padding: 7px;
     color: rgb(202, 202, 202);
     font-size: 20px;
 }
 
-footer #author > a{
-    color: #f6f9f6;
+footer #author > a,i{
+    color: #bdbdbd;
     text-decoration: none;
 }
 
-footer #author > a:hover{
+footer #author > a,i:hover{
     color: #fff;
-    text-decoration: underline;
 }
 
 footer i:hover{
