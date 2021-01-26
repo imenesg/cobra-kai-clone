@@ -1,0 +1,39 @@
+@media screen and (max-width:384px){
+    #cobra{
+        height: 57%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #sign{
+        width: 360px; height: 397px;
+        padding: 20.7px;
+    }
+
+    #sign input[type="text"], input[type="password"]{
+        width: 307px;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    #cobra{
+        height: 57%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #sign{
+        width: 360px; height: 397px;
+        padding: 20.7px;
+    }
+
+    #sign input[type="text"], input[type="password"]{
+        width: 307px;
+    }
+    
+}
