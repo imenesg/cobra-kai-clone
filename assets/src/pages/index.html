@@ -3,15 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/public/styles/css/style.css">
-    <link rel="stylesheet" href="/assets/public/styles/css/medias.css">
     <link rel="shortcut icon" href="/assets/public/img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="/assets/public/scripts/js/main.js"></script>
     <title>Cobra Kai™</title>
 </head>
 <body>
     <header id="menu">
         <ul>
-            <li><a href="#intro">Home</a></li>
+            <li id="home"><a href="#intro">Home</a></li>
             <li><a href="#training">Training</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#about">About</a></li>
@@ -19,31 +19,40 @@
         </ul>
     </header>
     <section id="intro">
-        <img src="/assets/public/img/img.png" name="cobra" id="cobra" onclick="cobraRedirect()" title="Click on Cobra for Sign-Up"/>
-    </section>
-    <section id="home">
-    <div class="text">
-         <h1>Welcome to Cobra Kai!</h1>
-         <p>There are no losers in this dojo.<br>
-            If you want to be a winner and<br>
-            to learn to defend yourself,<br>
-            you are in the right place!</p>
-    </div> 
+        <img src="/assets/public/img/img.png" name="cobra" id="cobra" onclick="cobraRedirect()" title="Click on Cobra for Sign In"/>
     </section>
     <section id="training">
-     <div class="carousel">
-        <img src="/assets/public/img/carousel/address.png" height="277">
-        <img src="/assets/public/img/carousel/1.jpg" height="277">
-        <img src="/assets/public/img/carousel/2.jpg" height="277">
-        <img src="/assets/public/img/carousel/3.jpg" height="277">
-        <img src="/assets/public/img/carousel/class.jpg" height="277">
-        <img src="/assets/public/img/carousel/class-2.png" height="277">
-      </div>
+        <div class="text">
+         <h1>About Training:</h1>
+         <p>There are no losers in this dojo. If you want to be a winner and to learn to defend yourself, you are in the right place!</p>
+         <p>Our training is on Cobra Kai Karate Dojo, localizated in Atlanta, and we have a lot of challenges, fights, tournaments and presentations for our class.</p>
+         <p>Fear does not exist in this dojo!</p>
+         <button id="modal-video" onclick="punch()"><i class="far fa-play-circle"></i> Watch our training</button>
+        <div class="address">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1612983873650!6m8!1m7!1snak4JTCwNoGKPYMPNKfYuw!2m2!1d33.69786273387864!2d-84.40891492828044!3f357.8152073115117!4f1.823068550420956!5f2.9560954897661493" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h4>Our Dojo: Outside</h4>
+            <p>Address: 2779 Lakewood Avenue SW, Atlanta, GA</p>
+        </div>
+        </div>
+        <div class="images">
+         <img src="/assets/public/img/carousel/1.jpg">
+         <img src="/assets/public/img/carousel/2.jpg">
+         <img src="/assets/public/img/carousel/3.jpg">
+         <h4>Our Dojo: Inside</h4>
+        </div>  
     </section>
     <section id="schedule">
-        <h1>Our Training</h1>
-        <table border="1">
-            <tr id="week">
+        <div class="tournament">
+            <h1>About Schedule:</h1>
+            <img src="/assets/public/img/what-is.jpg" title="All Valley Tournament">
+            <button id="modal-video" onclick="punch()"><i class="fas fa-trophy"></i> Watch our last Tournament</button>
+            <p>It's our schedule for the tournament of Karate, All Valley Tournament.</p>
+        </div>
+        <div class="table">
+        <p><i class="fas fa-trophy"></i> <strong>Schedule:</strong> 1 mounth for the Great Tournament <i class="fas fa-trophy"></i></p>
+        <table border="7">
+            <tr id="week"> <!--Sunday-->
+                <td>Sunday</td>
                 <td>Monday</td>
                 <td>Tuesday</td>
                 <td>Wednesday</td>
@@ -51,8 +60,62 @@
                 <td>Friday</td>
                 <td>Saturday</td>
             </tr>
+            <tr id="days"><!--Monday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td>Plus</td>
+            </tr>
+            <tr id="days"><!--Tuesday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td>Plus</td>
+            </tr>
+            <tr id="days"><!--Wednesday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td>Plus</td>
+            </tr>
+            <tr id="days"><!--Thursday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td>Plus</td>
+            </tr>
+            <tr id="days"><!--Friday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td>Plus</td>
+            </tr>
+            <tr id="days"><!--Saturday-->
+                <td>None</td>
+                <td>Training</td>
+                <td>Challenge</td>
+                <td>Training</td>
+                <td>Fight</td>
+                <td>Exams</td>
+                <td id="Tournament">Tournament</td>
+            </tr>
         </table>
-        <p>Address: Reseda, CA</p>
+    </div>
     </section>
     <section id="about">
         <div class="text">
@@ -81,12 +144,11 @@
             <h1>Sign in</h1>
             Username<input type="text"/><br>
             Password<input type="password"/><br>
-            <button>Sign in</button><br>
-            <a href="">Forgot Password?</a><br>
-        <button id="sign-up">Create Account</button>
+            <button onclick="punch()">Sign in</button><br>
+            <a href="#">Forgot Password?</a><br>
+        <button id="sign-up" onclick="punch()">Create Account</button>
         </div>
     </section>
     <footer>© All rights reserved for Open Source and educacional studies | <a href="https://github.com/IsaacAlves7/cobra-kai-clone"><i class="fab fa-github"> Repository</i></a> | <a href="https://github.com/IsaacAlves7" target="_blank"><i class="fab fa-github-alt"> Developed by Miguel Diaz</i></a> | #StrikeFirst #NoMercy #StrikeHard #CobraKaiNeverDies #OnlyOnNetflix | <a href="https://www.netflix.com/br/title/81002370" target="_blank"><img src="/assets/public/img/netflix-1.svg" width="47" title="Watch now the s01:ep03 and ep05"></a></footer>
-    <script src="/assets/public/scripts/js/main.js"></script>
 </body>
 </html>
