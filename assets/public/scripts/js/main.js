@@ -6,7 +6,7 @@ function cobraRedirect(){
 
     setTimeout(
         function() {
-           window.location.href="#sign-in"; //window.scrollTo(4297, 4297)
+           window.location.href="#sign-in";
         }.bind(this),
         577
     );
