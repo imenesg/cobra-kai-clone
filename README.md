@@ -1,4 +1,4 @@
-# <img src="https://cdn.worldvectorlogo.com/logos/cobra-kia-logo.svg" height="30"> Cobra Kai Clone 🐍🥋
+# <img src="https://cdn.worldvectorlogo.com/logos/cobra-kia-logo.svg" height="40"> Cobra Kai Clone 🐍🥋
 It's a repository of Cobra Kai Portifolio website clone using HTML5, CSS3 and JS. 
 
 ![Cobra Kai UI](https://user-images.githubusercontent.com/61624336/105786305-8d2aff00-5f5b-11eb-876f-80ead5b514f7.jpg)
