@@ -1,7 +1,7 @@
 function cobraRedirect(){
     const bleep = new Audio();
-    bleep.src = "/assets/public/sound/cobra-sound.mp3";
-    document.cobra.src='/assets/public/img/img.svg';
+    bleep.src = "cobra-sound.mp3";
+    document.cobra.src='img2.svg';
     bleep.play();
 
     setTimeout(
@@ -12,8 +12,8 @@ function cobraRedirect(){
     );
 }
 
-function menuHamburger(){
-
+function cobraStop(){
+    cobra.src='img.svg';
 }
 
 function modalPopUp(){
