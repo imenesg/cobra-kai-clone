@@ -37,8 +37,8 @@ body{
     border-bottom: 6px solid #bd1212;
     padding: 11px 8%;
     background-color: var(--transparent-black);
-    /* -webkit-backdrop-filter:saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px); */
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 #menu ul li{
