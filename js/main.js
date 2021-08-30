@@ -13,7 +13,7 @@ function cobraRedirect(){
 }
 
 function cobraStop(){
-    cobra.src='img.svg';
+    cobra.src='../assets/img/img.svg';
 }
 
 function modalPopUp(){
