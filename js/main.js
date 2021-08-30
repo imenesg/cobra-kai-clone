@@ -1,7 +1,7 @@
 function cobraRedirect(){
     const bleep = new Audio();
-    bleep.src = "cobra-sound.mp3";
-    document.cobra.src='img2.svg';
+    bleep.src = "../sounds/cobra-sound.mp3";
+    document.cobra.src='../assets/img/img2.svg';
     bleep.play();
 
     setTimeout(
@@ -24,6 +24,6 @@ function modalVideoPopUp(){
 
 function punch(){
     const punchSound = new Audio();
-    punchSound.src = "/assets/public/sound/punch-sound.mp3";
+    punchSound.src = "../sounds/punch-sound.mp3";
     punchSound.play();
 }

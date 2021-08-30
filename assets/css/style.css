@@ -1,57 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-:root{
-    --red:#bd1212;
-    --light-red:#cf1414;
+:root {
+    --red: #bd1212;
+    --light-red: #cf1414;
     --transparent-black: #000000b4;
     --yellow: #fffd76;
-    --white:#fff;
+    --white: #fff;
     --black: #000;
 }
 
-::selection{
+::selection {
     background: var(--red);
     color: var(--yellow);
 }
 
-p,h1,h2,h3,h4,h5,h6,td{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td {
     color: var(--white);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     margin: auto;
 }
 
+.container {
+    padding: 1rem;
+}
+
+
 /* ----------------- MENU RESPONSIVE FIXED ---------------- */
 
-#menu{
+#menu {
     width: 100%;
     position: fixed;
     border-bottom: 6px solid #bd1212;
     padding: 11px 8%;
     background-color: var(--transparent-black);
-    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
-#menu ul li{
+#menu ul li {
     float: left;
     margin: 0px 100px 0px 0px;
     list-style: none;
 }
 
-#menu ul #home{
+#menu ul #home {
     padding-left: 30px;
 }
 
-#menu ul li a{
+#menu ul li a {
     list-style: none;
     text-decoration: none;
     color: #cf1414;
@@ -63,43 +74,46 @@ body{
     flex-grow: 1;
 }
 
-#menu ul li a:hover{
+#menu ul li a:hover {
     transition: 0.2s;
     box-shadow: 0px 3px 0px#cf1414;
 }
 
-#menu ul li a:active{
+#menu ul li a:active {
     transition: 0.2s;
     color: #f01010;
     box-shadow: 0px 3px 0px#f01010;
 }
 
+
 /* ---------------- SECTIONS ------------------ */
 
-#intro{
-    width: 100%; height: 100vh;
+#intro {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    padding-top: 53px;
 }
 
-#cobra{
-    height: 757px;
+#cobra {
+    height: 100%;
     cursor: pointer;
 }
 
-#intro{
+#intro {
     border-bottom: 7px solid #161616;
 }
 
-#parallax{
-    width: 100%; height: 77vh;
+#parallax {
+    width: 100%;
+    height: 77vh;
     background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-image: url('/assets/public/img/parallax.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -107,8 +121,9 @@ body{
     border-bottom: 7px solid #161616;
 }
 
-#training{
-    width: 100%; height: 100vh;
+#training {
+    width: 100%;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,8 +132,9 @@ body{
     border-bottom: 7px solid #161616;
 }
 
-#schedule{
-    width: 100%; height: 100vh;
+#schedule {
+    width: 100%;
+    max-height: 110vh;
     display: grid;
     grid-template-columns: repeat(21, 1fr);
     grid-template-rows: repeat(21, 1fr);
@@ -126,9 +142,9 @@ body{
     border-bottom: 7px solid #161616;
 }
 
-#about{
-    width: 100%; height: 100vh;
-    
+#about {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -136,8 +152,9 @@ body{
     border-bottom: 7px solid #161616;
 }
 
-#sign-in{
-    width: 100%; height: 100vh;
+#sign-in {
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
@@ -146,15 +163,14 @@ body{
 }
 
 
-
 /* ----------------------- SCHEDULE ---------------------- */
 
-#schedule h1{
+#schedule h1 {
     font-size: 37px;
     margin-bottom: 17px;
 }
 
-#schedule .tournament{
+#schedule .tournament {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +178,7 @@ body{
     font-size: 24px;
 }
 
-#schedule .tournament button{
+#schedule .tournament button {
     margin-top: 17px;
     margin-bottom: 27px;
     background-color: #ebda40;
@@ -177,7 +193,7 @@ body{
     font-size: 17px;
 }
 
-#schedule .tournament button:active{
+#schedule .tournament button:active {
     background-color: #c7b302;
     color: #000;
     border-top: 2px solid #aa9904;
@@ -185,19 +201,19 @@ body{
     top: 2px;
 }
 
-#schedule .tournament img{
+#schedule .tournament img {
     height: 287px;
     cursor: pointer;
     margin: 17px 0px 17px 0px;
 }
 
-.table{
+.table {
     text-align: center;
     grid-column-start: 7;
     grid-row-start: 1;
 }
 
-table{
+table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -206,19 +222,19 @@ table{
     font-size: 17px;
 }
 
-table #week td{
+table #week td {
     background-color: var(--red);
     color: var(--yellow);
     text-align: center;
 }
 
-table tr td{
+table tr td {
     color: var(--yellow);
     text-align: center;
     padding: 7px;
 }
 
-table tr #Tournament{
+table tr #Tournament {
     color: var(--white);
     background-color: #ff0000;
 }
@@ -226,11 +242,11 @@ table tr #Tournament{
 
 /* ------------------- ABOUT -------------------- */
 
-#about .sensei > img{
-    margin-left: -170px;
+#about .sensei>img {
+    /*margin-left: -170px;*/
 }
 
-#about .text{
+#about .text {
     color: #f6f9f6;
     text-align: left;
     margin-top: -477px;
@@ -239,38 +255,40 @@ table tr #Tournament{
     height: 120px;
 }
 
-#about .text h1{
+#about .text h1 {
     margin-bottom: 2px;
     font-size: 30px;
 }
 
-#about .text h1:nth-child(1){
+#about .text h1:nth-child(1) {
     margin-bottom: 20px;
     font-size: 37px;
 }
 
-#about .text p{
+#about .text p {
     font-size: 24px;
 }
 
+
 /* ------------------ LOGIN AREA -------------------- */
 
-#sign-in #sign{
+#sign-in #sign {
     grid-column-start: 11;
     grid-row-start: 10;
 }
 
-#sign{
+#sign {
     background-color: #bd1212;
     padding: 14px 2px 54px 54px;
-    width: 570px; height: 407px;
+    width: 570px;
+    height: 407px;
     border-radius: 7px;
     font-weight: bold;
     font-size: 17.7px;
     color: var(--white);
 }
 
-#sign h1{
+#sign h1 {
     text-align: center;
     margin-left: -50px;
     margin-bottom: 27.9px;
@@ -278,46 +296,51 @@ table tr #Tournament{
     font-size: 30px;
 }
 
-#sign a{
- color: var(--white);
- text-decoration: none;
- position: absolute;
- margin-top: 27px;
- font-weight: lighter;
- position: inline-block;
+#sign a {
+    color: var(--white);
+    text-decoration: none;
+    position: absolute;
+    margin-top: 27px;
+    font-weight: lighter;
+    position: inline-block;
 }
 
-#sign a:hover{
+#sign a:hover {
     text-decoration: underline;
 }
 
-#sign input[type="text"], input[type="password"]{
-    outline: none; 
+#sign input[type="text"],
+input[type="password"] {
+    outline: none;
     width: 457px;
     font-size: 30px;
     margin: 7px auto;
     font-family: 'Arial', sans-serif;
 }
 
-#sign button{
-    margin: 20px 0px 0px 0px ;
-    width: 107px; height: 47px;
+#sign button {
+    margin: 20px 0px 0px 0px;
+    width: 107px;
+    height: 47px;
     font-size: 17px;
     outline: none;
     cursor: pointer;
 }
 
-#sign-up{
+#sign-up {
     outline: none;
     cursor: pointer;
     font-size: 15.7px;
     display: flex;
     justify-self: center;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
-#sign-in > #sign-up{
-    width: 187px; height: 50px;
+#sign-in>#sign-up {
+    width: 187px;
+    height: 50px;
     padding: 0px 7px 0px 7px;
     outline: none;
     cursor: pointer;
@@ -325,9 +348,10 @@ table tr #Tournament{
     grid-row-start: 13;
 }
 
+
 /* -------------------- FOOTER ------------------- */
 
-footer{
+footer {
     text-align: center;
     background-color: #0f0e0e;
     padding: 7px;
@@ -335,20 +359,19 @@ footer{
     font-size: 20px;
 }
 
-footer a > i{
+footer a>i {
     color: #bdbdbd;
     text-decoration: none;
 }
 
-footer a > i:hover{
+footer a>i:hover {
     color: #fff;
 }
 
 
-
 /* ------------------- TRAINING --------------------- */
 
-#training .images{
+#training .images {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,65 +379,66 @@ footer a > i:hover{
     margin-top: 17px;
     margin-right: 50px;
     cursor: pointer;
-   }
-   
-   .images img{
-       margin: 7px;
-       height: 197px;
-   }
+}
 
-   #training .text .address{
-       margin-top: 27px;
-   }
+.images img {
+    margin: 7px;
+    height: 197px;
+}
 
-   #training .text h1{
-       margin-top: 50px;
-       margin-bottom: 17px;
-   }
+#training .text .address {
+    margin-top: 27px;
+}
 
-   #training .text p{
-       padding-right: 37px;
-       margin-bottom: 7px;
-   }
+#training .text h1 {
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
 
-   #training .text .address p{
-       font-size: 17px;
-   }
+#training .text p {
+    padding-right: 37px;
+    margin-bottom: 7px;
+}
 
-   #training .text{
-     padding: 77px;
-   }
+#training .text .address p {
+    font-size: 17px;
+}
 
-   #training .text button#modal-video{
-     margin-top: 17px;
-     margin-bottom: 27px;
-     background-color: var(--red);
-     outline: none;
-     border-color: transparent transparent #a11010 transparent;
-     border-bottom: 4px solid #a11010;
-     border-radius: 4px;
-     padding: 7px;
-     cursor: pointer;
-     color: var(--white);
-     letter-spacing: 0.07em;
-     font-size: 17px;
-   }
+#training .text {
+    padding: 77px;
+}
 
-   #training .text button#modal-video:active{
-     background-color: #901010;
-     color: #f9f6f6;
-     border-color: #660a0a transparent transparent transparent;
-     border-top: 2px solid  #660a0a;
-     position: relative;
-     top: 2px;
-   }
+#training .text button#modal-video {
+    margin-top: 17px;
+    margin-bottom: 27px;
+    background-color: var(--red);
+    outline: none;
+    border-color: transparent transparent #a11010 transparent;
+    border-bottom: 4px solid #a11010;
+    border-radius: 4px;
+    padding: 7px;
+    cursor: pointer;
+    color: var(--white);
+    letter-spacing: 0.07em;
+    font-size: 17px;
+}
 
-   #training .text p{
-       font-size: 24px;
-   }
+#training .text button#modal-video:active {
+    background-color: #901010;
+    color: #f9f6f6;
+    border-color: #660a0a transparent transparent transparent;
+    border-top: 2px solid #660a0a;
+    position: relative;
+    top: 2px;
+}
 
-   #training .text h1{
-       font-size: 37px;
-   }
+#training .text p {
+    font-size: 24px;
+}
+
+#training .text h1 {
+    font-size: 37px;
+}
+
 
 /* ------------------- MEDIA QUERIES ----------------- */
