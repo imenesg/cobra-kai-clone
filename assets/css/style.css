@@ -50,6 +50,7 @@ body {
     background-color: var(--transparent-black);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    z-index: 2;
 }
 
 #menu ul li {
